@@ -1,0 +1,1 @@
+I counted how often each character appears, then checked if all frequencies are equal or if removing just one character could make them equal — which means the string is valid.

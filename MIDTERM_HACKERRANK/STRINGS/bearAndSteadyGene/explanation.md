@@ -1,0 +1,1 @@
+I used a sliding window to find the smallest substring that, when replaced, balances the gene so each character appears exactly one-fourth of the time.
