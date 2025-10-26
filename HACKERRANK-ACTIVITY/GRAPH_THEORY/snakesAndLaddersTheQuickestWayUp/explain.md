@@ -1,0 +1,1 @@
+To solve this, I imagined the board as a path from square 1 to 100. I used Breadth-First Search (BFS) to try every possible dice roll (1 to 6) from each position. If I land on a ladder, I climb up; if I land on a snake, I slide down. I kept track of visited squares to avoid looping. The goal is to reach square 100 in the fewest moves, and I returned that number.

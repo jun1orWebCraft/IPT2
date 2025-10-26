@@ -1,0 +1,1 @@
+To solve this, I used Prim’s algorithm to build a Minimum Spanning Tree (MST). I started from a given node and always picked the smallest edge that connects to a new node. I used a min-heap (simulated with sorting) to keep track of the cheapest edges. I added up the weights of the selected edges to get the total cost to connect all nodes without cycles.

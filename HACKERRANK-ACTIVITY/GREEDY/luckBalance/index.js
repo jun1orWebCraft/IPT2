@@ -4,16 +4,16 @@ function luckBalance(k, contests) {
 
     for (let [l, t] of contests) {
         if (t === 0) {
-            luck += l; // Always lose unimportant
+            luck += l; 
         } else {
-            important.push(l); // Store important contest luck
+            important.push(l); 
         }
     }
 
-    // Sort important contests by luck descending
+
     important.sort((a, b) => b - a);
 
-    // Lose top k important contests
+ 
     for (let i = 0; i < important.length; i++) {
         if (i < k) {
             luck += important[i];

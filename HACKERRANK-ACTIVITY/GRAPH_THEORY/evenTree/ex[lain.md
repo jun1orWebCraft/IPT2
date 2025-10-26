@@ -1,0 +1,1 @@
+To solve this, I imagined the tree as a graph. I used DFS to count how many nodes are in each subtree. If a subtree has an even number of nodes, I can safely cut the edge above it. I counted how many such cuts are possible. The goal is to split the tree into smaller parts, each with an even number of nodes, by removing as many valid edges as possible.

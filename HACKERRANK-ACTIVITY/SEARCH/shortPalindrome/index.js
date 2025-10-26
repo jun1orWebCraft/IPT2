@@ -1,0 +1,29 @@
+function shortPalindrome(s) {
+    const MOD = 1000000007;
+    const count1 = new Array(26).fill(0);
+    const count2 = Array.from({ length: 26 }, () => new Array(26).fill(0));
+    const count3 = new Array(26).fill(0);
+    let result = 0;
+
+    for (const ch of s) {
+        const idx = ch.charCodeAt(0) - 97;
+
+        // Add count of 3-letter patterns ending with this character
+        result = (result + count3[idx]) % MOD;
+
+        // Update 3-letter pattern counts
+        for (let j = 0; j < 26; j++) {
+            count3[j] = (count3[j] + count2[j][idx]) % MOD;
+        }
+
+        // Update 2-letter pattern counts
+        for (let j = 0; j < 26; j++) {
+            count2[j][idx] = (count2[j][idx] + count1[j]) % MOD;
+        }
+
+        // Update single character count
+        count1[idx]++;
+    }
+
+    return result;
+}
