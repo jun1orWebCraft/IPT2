@@ -1,0 +1,1 @@
+Instead of simulating every move, I noticed the game switches turns based on how many steps it takes to reach 1. So I converted n - 1 to binary and counted the number of 1s. If that count is odd, Louise wins since she starts first. If it’s even, Richard wins. Simple logic, clean code.

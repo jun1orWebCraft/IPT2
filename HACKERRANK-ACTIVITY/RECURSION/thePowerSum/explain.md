@@ -1,0 +1,1 @@
+This function uses recursion to try all combinations of unique natural numbers raised to the power N that sum up to X. At each step, it decides whether to include the current number (num) or skip it, and continues until it either matches X exactly (valid way) or exceeds it (invalid path).

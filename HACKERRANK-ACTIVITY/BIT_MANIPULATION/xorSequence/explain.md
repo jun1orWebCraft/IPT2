@@ -1,0 +1,1 @@
+Instead of generating the array a[i] = i ^ (i - 1) and XORing each element from l to r, I found a pattern-based shortcut using math and bitwise logic. This makes the solution efficient even for huge values.
