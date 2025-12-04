@@ -1,0 +1,1 @@
+So the function simulates passes of candy production. Each pass, I add m * w candies. If I can’t afford a new machine or worker yet, I skip ahead until I can. When I buy, I try to balance machines and workers because that maximizes production. I keep track of the minimum passes needed to reach the target n, and return that at the end.
